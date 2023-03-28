@@ -1,0 +1,2144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1194</width>
+    <height>811</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>16777215</width>
+    <height>10777215</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:rgb(192, 184, 255)</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="sizeIncrement">
+    <size>
+     <width>1</width>
+     <height>0</height>
+    </size>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <item row="0" column="0">
+     <widget class="QFrame" name="menu">
+      <property name="maximumSize">
+       <size>
+        <width>150</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="toolTipDuration">
+       <number>-1</number>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(253, 242, 255);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="25" column="0" rowspan="2">
+        <spacer name="verticalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>160</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="7" column="0" colspan="4">
+        <widget class="QLabel" name="label_2">
+         <property name="font">
+          <font>
+           <family>黑体</family>
+           <pointsize>9</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>/</string>
+         </property>
+        </widget>
+       </item>
+       <item row="25" column="2">
+        <widget class="QDial" name="dial"/>
+       </item>
+       <item row="9" column="0" colspan="5">
+        <widget class="QSlider" name="horizontalSlider">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0" colspan="5">
+        <widget class="QPushButton" name="pushButton2">
+         <property name="maximumSize">
+          <size>
+           <width>120</width>
+           <height>16720202</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>黑体</family>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	background:rgb(148, 225, 139);
+	border:none;
+	height:18;
+	border-radius:5px;
+}
+
+QPushButton::hover {
+	background:rgb(197, 131, 255);
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Close</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0" colspan="5">
+        <widget class="QPushButton" name="pushButton3">
+         <property name="maximumSize">
+          <size>
+           <width>120</width>
+           <height>16720202</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>黑体</family>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	background:rgb(148, 225, 139);
+	border:none;
+	height:18;
+	border-radius:5px;
+}
+
+QPushButton::hover {
+	background:rgb(197, 131, 255);
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Analyse</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0" colspan="5">
+        <widget class="QPushButton" name="pushButton5">
+         <property name="maximumSize">
+          <size>
+           <width>120</width>
+           <height>16720202</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>黑体</family>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	background:rgb(148, 225, 139);
+	border:none;
+	height:18;
+	border-radius:5px;
+}
+
+QPushButton::hover {
+	background:rgb(197, 131, 255);
+}
+</string>
+         </property>
+         <property name="text">
+          <string>FIR Design</string>
+         </property>
+        </widget>
+       </item>
+       <item row="27" column="0" colspan="4">
+        <widget class="QProgressBar" name="progressBar">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">bacgruand:rgb(95, 157, 239);</string>
+         </property>
+         <property name="value">
+          <number>24</number>
+         </property>
+        </widget>
+       </item>
+       <item row="11" column="0" colspan="4">
+        <widget class="QPushButton" name="pushButton">
+         <property name="font">
+          <font>
+           <family>黑体</family>
+           <pointsize>11</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	background:rgb(244, 211, 255);
+	border:none;
+	height:18;
+	border-radius:5px;
+}
+
+QPushButton::hover {
+	background:rgb(197, 131, 255);
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Play/Pause</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0" colspan="5">
+        <widget class="QPushButton" name="pushButton1">
+         <property name="maximumSize">
+          <size>
+           <width>120</width>
+           <height>16720202</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>黑体</family>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	background:rgb(148, 225, 139);
+	border:none;
+	height:18;
+	border-radius:5px;
+}
+
+QPushButton::hover {
+	background:rgb(197, 131, 255);
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Open</string>
+         </property>
+        </widget>
+       </item>
+       <item row="10" column="2">
+        <widget class="QLabel" name="label_67">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <family>黑体</family>
+           <pointsize>11</pointsize>
+          </font>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::RightToLeft</enum>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color:rgb(0, 0, 0)</string>
+         </property>
+         <property name="text">
+          <string>00:00</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0" colspan="5">
+        <widget class="QPushButton" name="pushButton4">
+         <property name="maximumSize">
+          <size>
+           <width>120</width>
+           <height>16720202</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>黑体</family>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="accessibleDescription">
+          <string/>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	background:rgb(148, 225, 139);
+	border:none;
+	height:18;
+	border-radius:5px;
+}
+
+QPushButton::hover {
+	background:rgb(197, 131, 255);
+}
+</string>
+         </property>
+         <property name="text">
+          <string>IIR Design</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>250</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="10" column="0">
+        <widget class="QLabel" name="label_66">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <family>黑体</family>
+           <pointsize>11</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color:rgb(0, 0, 0)</string>
+         </property>
+         <property name="text">
+          <string>00:00</string>
+         </property>
+        </widget>
+       </item>
+       <item row="10" column="1">
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Maximum</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QFrame" name="function">
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>167772</height>
+       </size>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:rgb(238, 250, 255);
+</string>
+      </property>
+      <property name="locale">
+       <locale language="Chinese" country="China"/>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_3">
+       <item row="0" column="0">
+        <widget class="QStackedWidget" name="stackedWidget">
+         <property name="styleSheet">
+          <string notr="true">color:rgb(200, 155, 255)</string>
+         </property>
+         <property name="currentIndex">
+          <number>3</number>
+         </property>
+         <widget class="QWidget" name="page">
+          <widget class="QLabel" name="label">
+           <property name="geometry">
+            <rect>
+             <x>220</x>
+             <y>70</y>
+             <width>541</width>
+             <height>121</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>霞鹜文楷</family>
+             <pointsize>26</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>Welcome To The Signal Filter</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_4">
+           <property name="geometry">
+            <rect>
+             <x>380</x>
+             <y>190</y>
+             <width>251</width>
+             <height>41</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>霞鹜文楷</family>
+             <pointsize>21</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Open 打开文件</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_5">
+           <property name="geometry">
+            <rect>
+             <x>370</x>
+             <y>320</y>
+             <width>271</width>
+             <height>41</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>霞鹜文楷</family>
+             <pointsize>21</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Analys 分析信号</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_6">
+           <property name="geometry">
+            <rect>
+             <x>380</x>
+             <y>250</y>
+             <width>321</width>
+             <height>41</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>霞鹜文楷</family>
+             <pointsize>21</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Close 关闭程序</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_7">
+           <property name="geometry">
+            <rect>
+             <x>340</x>
+             <y>440</y>
+             <width>341</width>
+             <height>81</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>霞鹜文楷</family>
+             <pointsize>21</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>IIR Designer IIR滤波器</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_8">
+           <property name="geometry">
+            <rect>
+             <x>330</x>
+             <y>380</y>
+             <width>321</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>霞鹜文楷</family>
+             <pointsize>21</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>FIR Designer FIR滤波器</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="page_3">
+          <layout class="QGridLayout" name="gridLayout_4">
+           <item row="0" column="0">
+            <widget class="QGraphicsView" name="graphicsView"/>
+           </item>
+           <item row="0" column="1">
+            <widget class="QGraphicsView" name="graphicsView_2"/>
+           </item>
+           <item row="1" column="0">
+            <widget class="QGraphicsView" name="graphicsView_3"/>
+           </item>
+           <item row="1" column="1">
+            <widget class="QGraphicsView" name="graphicsView_4">
+             <property name="font">
+              <font>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0" colspan="2">
+            <layout class="QHBoxLayout" name="horizontalLayout">
+             <item>
+              <widget class="QLabel" name="label_3">
+               <property name="font">
+                <font>
+                 <family>黑体</family>
+                 <pointsize>13</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color:rgb(115, 102, 154);</string>
+               </property>
+               <property name="text">
+                <string>/file name       </string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_68">
+               <property name="font">
+                <font>
+                 <family>黑体</family>
+                 <pointsize>11</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color:rgb(0, 0, 0)</string>
+               </property>
+               <property name="text">
+                <string>00:00</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QSlider" name="horizontalSlider_2">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_69">
+               <property name="font">
+                <font>
+                 <family>黑体</family>
+                 <pointsize>11</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color:rgb(0, 0, 0)</string>
+               </property>
+               <property name="text">
+                <string>00:00</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_6">
+               <property name="font">
+                <font>
+                 <family>黑体</family>
+                 <pointsize>12</pointsize>
+                 <weight>50</weight>
+                 <bold>false</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+	background:rgb(233, 202, 255);
+	color:rgb(56, 56, 56);
+	border:none;
+	height:18;
+	border-radius:5px;
+}
+
+QPushButton::hover {
+	background:rgb(197, 131, 255);
+}
+
+</string>
+               </property>
+               <property name="text">
+                <string>Play/Pause</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QDial" name="dial_2">
+               <property name="font">
+                <font>
+                 <pointsize>14</pointsize>
+                </font>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_3">
+               <property name="font">
+                <font>
+                 <family>黑体</family>
+                 <pointsize>15</pointsize>
+                 <weight>50</weight>
+                 <bold>false</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+	background:rgb(148, 225, 139);
+	color:rgb(56, 56, 56);
+	border:none;
+	height:18;
+	border-radius:5px;
+}
+
+QPushButton::hover {
+	background:rgb(197, 131, 255);
+}
+</string>
+               </property>
+               <property name="text">
+                <string>   analyse   </string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QGroupBox" name="groupBox_3">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="title">
+                <string>GroupBox</string>
+               </property>
+               <widget class="QTextBrowser" name="textBrowser">
+                <property name="geometry">
+                 <rect>
+                  <x>20</x>
+                  <y>10</y>
+                  <width>191</width>
+                  <height>81</height>
+                 </rect>
+                </property>
+               </widget>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="page_4">
+          <layout class="QGridLayout" name="gridLayout_5">
+           <item row="2" column="2">
+            <widget class="QGroupBox" name="groupBox_2">
+             <property name="font">
+              <font>
+               <family>Arial</family>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color:rgb(56, 56, 56);</string>
+             </property>
+             <property name="title">
+              <string>out</string>
+             </property>
+             <widget class="QTextBrowser" name="textBrowser_2">
+              <property name="geometry">
+               <rect>
+                <x>30</x>
+                <y>30</y>
+                <width>281</width>
+                <height>211</height>
+               </rect>
+              </property>
+             </widget>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QGraphicsView" name="graphicsView_7"/>
+           </item>
+           <item row="1" column="2">
+            <widget class="QGraphicsView" name="graphicsView_8"/>
+           </item>
+           <item row="0" column="2">
+            <widget class="QGraphicsView" name="graphicsView_6"/>
+           </item>
+           <item row="0" column="1">
+            <widget class="QGraphicsView" name="graphicsView_5"/>
+           </item>
+           <item row="0" column="0" rowspan="2">
+            <widget class="QGroupBox" name="groupBox_4">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <family>黑体</family>
+               <pointsize>11</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color:rgb(56, 56, 56);</string>
+             </property>
+             <property name="title">
+              <string>IIR</string>
+             </property>
+             <widget class="QLabel" name="label_9">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>40</y>
+                <width>211</width>
+                <height>20</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>黑体</family>
+                <pointsize>11</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color:rgb(56, 56, 56);</string>
+              </property>
+              <property name="text">
+               <string>Passband Cutoff Frequency</string>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_10">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>80</y>
+                <width>201</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>黑体</family>
+                <pointsize>11</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color:rgb(56, 56, 56);</string>
+              </property>
+              <property name="text">
+               <string>Stopband Cutoff Frequency</string>
+              </property>
+             </widget>
+             <widget class="QLineEdit" name="lineEdit">
+              <property name="geometry">
+               <rect>
+                <x>220</x>
+                <y>40</y>
+                <width>81</width>
+                <height>20</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>黑体</family>
+                <pointsize>11</pointsize>
+               </font>
+              </property>
+             </widget>
+             <widget class="QLineEdit" name="lineEdit_2">
+              <property name="geometry">
+               <rect>
+                <x>220</x>
+                <y>80</y>
+                <width>81</width>
+                <height>20</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>黑体</family>
+                <pointsize>11</pointsize>
+               </font>
+              </property>
+             </widget>
+             <widget class="QLineEdit" name="lineEdit_3">
+              <property name="geometry">
+               <rect>
+                <x>220</x>
+                <y>120</y>
+                <width>81</width>
+                <height>20</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>黑体</family>
+                <pointsize>11</pointsize>
+               </font>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_11">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>120</y>
+                <width>191</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>黑体</family>
+                <pointsize>11</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color:rgb(56, 56, 56);</string>
+              </property>
+              <property name="text">
+               <string>Maximum Attenuation(Rp)</string>
+              </property>
+             </widget>
+             <widget class="QLineEdit" name="lineEdit_4">
+              <property name="geometry">
+               <rect>
+                <x>220</x>
+                <y>160</y>
+                <width>81</width>
+                <height>20</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>黑体</family>
+                <pointsize>11</pointsize>
+               </font>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_12">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>160</y>
+                <width>191</width>
+                <height>20</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>黑体</family>
+                <pointsize>11</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color:rgb(56, 56, 56);</string>
+              </property>
+              <property name="text">
+               <string>Minimum Attenuation(As)</string>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_16">
+              <property name="geometry">
+               <rect>
+                <x>310</x>
+                <y>160</y>
+                <width>21</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>黑体</family>
+                <pointsize>11</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color:rgb(56, 56, 56);</string>
+              </property>
+              <property name="text">
+               <string>dB</string>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_17">
+              <property name="geometry">
+               <rect>
+                <x>310</x>
+                <y>120</y>
+                <width>21</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>黑体</family>
+                <pointsize>11</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color:rgb(56, 56, 56);</string>
+              </property>
+              <property name="text">
+               <string>dB</string>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_18">
+              <property name="geometry">
+               <rect>
+                <x>310</x>
+                <y>80</y>
+                <width>21</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>黑体</family>
+                <pointsize>11</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color:rgb(56, 56, 56);</string>
+              </property>
+              <property name="text">
+               <string>Hz</string>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_19">
+              <property name="geometry">
+               <rect>
+                <x>310</x>
+                <y>40</y>
+                <width>21</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>黑体</family>
+                <pointsize>11</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color:rgb(56, 56, 56);</string>
+              </property>
+              <property name="text">
+               <string>Hz</string>
+              </property>
+             </widget>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QGroupBox" name="groupBox_5">
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+	background:rgb(244, 211, 255);
+	rgb(44, 44, 44)
+	border:none;
+	height:18;
+	border-radius:5px;
+}
+
+QPushButton::hover {
+	background:rgb(197, 131, 255);
+}
+</string>
+             </property>
+             <property name="title">
+              <string/>
+             </property>
+             <widget class="QLineEdit" name="lineEdit_5">
+              <property name="geometry">
+               <rect>
+                <x>150</x>
+                <y>100</y>
+                <width>141</width>
+                <height>20</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>黑体</family>
+                <pointsize>11</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color:rgb(56, 56, 56);</string>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_13">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>100</y>
+                <width>141</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>黑体</family>
+                <pointsize>11</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color:rgb(56, 56, 56);</string>
+              </property>
+              <property name="text">
+               <string>Sample Frequency</string>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_14">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>60</y>
+                <width>121</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>黑体</family>
+                <pointsize>11</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color:rgb(56, 56, 56);</string>
+              </property>
+              <property name="text">
+               <string>IIR filter Type</string>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_15">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>30</y>
+                <width>101</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>黑体</family>
+                <pointsize>11</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color:rgb(56, 56, 56);</string>
+              </property>
+              <property name="text">
+               <string>Filter Type</string>
+              </property>
+             </widget>
+             <widget class="QComboBox" name="comboBox">
+              <property name="geometry">
+               <rect>
+                <x>150</x>
+                <y>30</y>
+                <width>141</width>
+                <height>22</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>黑体</family>
+                <pointsize>12</pointsize>
+                <weight>50</weight>
+                <italic>false</italic>
+                <bold>false</bold>
+                <underline>false</underline>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color:rgb(56, 56, 56);</string>
+              </property>
+              <item>
+               <property name="text">
+                <string>Lowpass</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>bandstop</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Highpass</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Bandpass</string>
+               </property>
+              </item>
+             </widget>
+             <widget class="QComboBox" name="comboBox_2">
+              <property name="geometry">
+               <rect>
+                <x>150</x>
+                <y>60</y>
+                <width>141</width>
+                <height>22</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>黑体</family>
+                <pointsize>11</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color:rgb(56, 56, 56);</string>
+              </property>
+              <item>
+               <property name="text">
+                <string>Butterworth</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Cauer/elliptic</string>
+               </property>
+              </item>
+             </widget>
+             <widget class="QPushButton" name="pushButton_7">
+              <property name="geometry">
+               <rect>
+                <x>20</x>
+                <y>130</y>
+                <width>261</width>
+                <height>23</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>黑体</family>
+                <pointsize>11</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton{
+	background:rgb(244, 211, 255);
+	color:rgb(56, 56, 56);
+	border:none;
+	height:18;
+	border-radius:5px;
+}
+
+QPushButton::hover {
+	background:rgb(197, 131, 255);
+}
+\</string>
+              </property>
+              <property name="text">
+               <string>Start Design</string>
+              </property>
+             </widget>
+             <widget class="QPushButton" name="pushButton_8">
+              <property name="geometry">
+               <rect>
+                <x>20</x>
+                <y>170</y>
+                <width>261</width>
+                <height>23</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>黑体</family>
+                <pointsize>11</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton{
+	background:rgb(244, 211, 255);
+	color:rgb(56, 56, 56);
+	border:none;
+	height:18;
+	border-radius:5px;
+}
+
+QPushButton::hover {
+	background:rgb(197, 131, 255);
+}
+\</string>
+              </property>
+              <property name="text">
+               <string>Apply Result To Current File</string>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_76">
+              <property name="geometry">
+               <rect>
+                <x>300</x>
+                <y>100</y>
+                <width>21</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>黑体</family>
+                <pointsize>11</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color:rgb(56, 56, 56);</string>
+              </property>
+              <property name="text">
+               <string>Hz</string>
+              </property>
+             </widget>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QTabWidget" name="tabWidget_2">
+             <property name="styleSheet">
+              <string notr="true">color:rgb(56, 56, 56);</string>
+             </property>
+             <property name="currentIndex">
+              <number>0</number>
+             </property>
+             <widget class="QWidget" name="tab_11">
+              <attribute name="title">
+               <string>Tab 1</string>
+              </attribute>
+              <widget class="QSlider" name="horizontalSlider_4">
+               <property name="geometry">
+                <rect>
+                 <x>60</x>
+                 <y>50</y>
+                 <width>191</width>
+                 <height>22</height>
+                </rect>
+               </property>
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+              </widget>
+              <widget class="QDial" name="dial_4">
+               <property name="geometry">
+                <rect>
+                 <x>160</x>
+                 <y>80</y>
+                 <width>71</width>
+                 <height>101</height>
+                </rect>
+               </property>
+              </widget>
+              <widget class="QPushButton" name="pushButton_4">
+               <property name="geometry">
+                <rect>
+                 <x>30</x>
+                 <y>110</y>
+                 <width>111</width>
+                 <height>23</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <family>黑体</family>
+                 <pointsize>11</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+	background:rgb(244, 211, 255);
+	border:none;
+	height:18;
+	border-radius:5px;
+}
+
+QPushButton::hover {
+	background:rgb(197, 131, 255);
+}
+</string>
+               </property>
+               <property name="text">
+                <string>Play/Pause</string>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_70">
+               <property name="geometry">
+                <rect>
+                 <x>270</x>
+                 <y>40</y>
+                 <width>41</width>
+                 <height>33</height>
+                </rect>
+               </property>
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="font">
+                <font>
+                 <family>黑体</family>
+                 <pointsize>11</pointsize>
+                </font>
+               </property>
+               <property name="layoutDirection">
+                <enum>Qt::RightToLeft</enum>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color:rgb(0, 0, 0)</string>
+               </property>
+               <property name="text">
+                <string>00:00</string>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_71">
+               <property name="geometry">
+                <rect>
+                 <x>11</x>
+                 <y>40</y>
+                 <width>41</width>
+                 <height>33</height>
+                </rect>
+               </property>
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="font">
+                <font>
+                 <family>黑体</family>
+                 <pointsize>11</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color:rgb(0, 0, 0)</string>
+               </property>
+               <property name="text">
+                <string>00:00</string>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_74">
+               <property name="geometry">
+                <rect>
+                 <x>10</x>
+                 <y>20</y>
+                 <width>301</width>
+                 <height>16</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <family>黑体</family>
+                 <pointsize>11</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>IIR Audio</string>
+               </property>
+              </widget>
+             </widget>
+             <widget class="QWidget" name="tab_12">
+              <attribute name="title">
+               <string>Tab 2</string>
+              </attribute>
+             </widget>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="page_5">
+          <layout class="QGridLayout" name="gridLayout_6">
+           <item row="0" column="2">
+            <widget class="QGraphicsView" name="graphicsView_10"/>
+           </item>
+           <item row="2" column="1">
+            <widget class="QTabWidget" name="tabWidget">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>10777215</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>黑体</family>
+               <pointsize>9</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color:rgb(56, 56, 56);</string>
+             </property>
+             <property name="currentIndex">
+              <number>0</number>
+             </property>
+             <widget class="QWidget" name="tab">
+              <attribute name="title">
+               <string>Tab 1</string>
+              </attribute>
+              <widget class="QDial" name="dial_5">
+               <property name="geometry">
+                <rect>
+                 <x>170</x>
+                 <y>80</y>
+                 <width>71</width>
+                 <height>101</height>
+                </rect>
+               </property>
+              </widget>
+              <widget class="QPushButton" name="pushButton_5">
+               <property name="geometry">
+                <rect>
+                 <x>40</x>
+                 <y>110</y>
+                 <width>101</width>
+                 <height>23</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <family>黑体</family>
+                 <pointsize>11</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+	background:rgb(244, 211, 255);
+	border:none;
+	height:18;
+	border-radius:5px;
+}
+
+QPushButton::hover {
+	background:rgb(197, 131, 255);
+}
+</string>
+               </property>
+               <property name="text">
+                <string>Play/Pause</string>
+               </property>
+              </widget>
+              <widget class="QSlider" name="horizontalSlider_5">
+               <property name="geometry">
+                <rect>
+                 <x>60</x>
+                 <y>50</y>
+                 <width>191</width>
+                 <height>22</height>
+                </rect>
+               </property>
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_72">
+               <property name="geometry">
+                <rect>
+                 <x>261</x>
+                 <y>40</y>
+                 <width>41</width>
+                 <height>33</height>
+                </rect>
+               </property>
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="font">
+                <font>
+                 <family>黑体</family>
+                 <pointsize>11</pointsize>
+                </font>
+               </property>
+               <property name="layoutDirection">
+                <enum>Qt::RightToLeft</enum>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color:rgb(0, 0, 0)</string>
+               </property>
+               <property name="text">
+                <string>00:00</string>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_73">
+               <property name="geometry">
+                <rect>
+                 <x>11</x>
+                 <y>40</y>
+                 <width>41</width>
+                 <height>33</height>
+                </rect>
+               </property>
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="font">
+                <font>
+                 <family>黑体</family>
+                 <pointsize>11</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color:rgb(0, 0, 0)</string>
+               </property>
+               <property name="text">
+                <string>00:00</string>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_75">
+               <property name="geometry">
+                <rect>
+                 <x>10</x>
+                 <y>20</y>
+                 <width>311</width>
+                 <height>16</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <family>黑体</family>
+                 <pointsize>11</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>FIR Audio</string>
+               </property>
+              </widget>
+             </widget>
+             <widget class="QWidget" name="tab_2">
+              <attribute name="title">
+               <string>Tab 2</string>
+              </attribute>
+             </widget>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QGroupBox" name="groupBox_7">
+             <property name="font">
+              <font>
+               <family>黑体</family>
+               <pointsize>11</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color:rgb(56, 56, 56);</string>
+             </property>
+             <property name="title">
+              <string>GroupBox</string>
+             </property>
+             <widget class="QLabel" name="label_62">
+              <property name="geometry">
+               <rect>
+                <x>20</x>
+                <y>30</y>
+                <width>111</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>黑体</family>
+                <pointsize>11</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>Filter Type</string>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_63">
+              <property name="geometry">
+               <rect>
+                <x>20</x>
+                <y>60</y>
+                <width>121</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>黑体</family>
+                <pointsize>11</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>Window</string>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_64">
+              <property name="geometry">
+               <rect>
+                <x>20</x>
+                <y>100</y>
+                <width>161</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>黑体</family>
+                <pointsize>11</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>Sample Frequency</string>
+              </property>
+             </widget>
+             <widget class="QLineEdit" name="lineEdit_23">
+              <property name="geometry">
+               <rect>
+                <x>160</x>
+                <y>100</y>
+                <width>113</width>
+                <height>20</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>黑体</family>
+                <pointsize>11</pointsize>
+               </font>
+              </property>
+             </widget>
+             <widget class="QPushButton" name="pushButton_16">
+              <property name="geometry">
+               <rect>
+                <x>20</x>
+                <y>180</y>
+                <width>271</width>
+                <height>23</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>黑体</family>
+                <pointsize>11</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton{
+	background:rgb(244, 211, 255);
+	border:none;
+	height:18;
+	border-radius:5px;
+}
+
+QPushButton::hover {
+	background:rgb(197, 131, 255);
+}
+\</string>
+              </property>
+              <property name="text">
+               <string>Apply Result To Current File</string>
+              </property>
+             </widget>
+             <widget class="QPushButton" name="pushButton_17">
+              <property name="geometry">
+               <rect>
+                <x>20</x>
+                <y>140</y>
+                <width>271</width>
+                <height>23</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>黑体</family>
+                <pointsize>11</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton{
+	background:rgb(244, 211, 255);
+	border:none;
+	height:18;
+	border-radius:5px;
+}
+
+QPushButton::hover {
+	background:rgb(197, 131, 255);
+}
+\</string>
+              </property>
+              <property name="text">
+               <string>Start Design</string>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_65">
+              <property name="geometry">
+               <rect>
+                <x>280</x>
+                <y>100</y>
+                <width>21</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>黑体</family>
+                <pointsize>11</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>Hz</string>
+              </property>
+             </widget>
+             <widget class="QComboBox" name="comboBox_7">
+              <property name="geometry">
+               <rect>
+                <x>160</x>
+                <y>30</y>
+                <width>111</width>
+                <height>22</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>黑体</family>
+                <pointsize>12</pointsize>
+                <weight>50</weight>
+                <italic>false</italic>
+                <bold>false</bold>
+                <underline>false</underline>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color:rgb(56, 56, 56);</string>
+              </property>
+              <item>
+               <property name="text">
+                <string>Lowpass</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>bandstop</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Highpass</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Bandpass</string>
+               </property>
+              </item>
+             </widget>
+             <widget class="QComboBox" name="comboBox_5">
+              <property name="geometry">
+               <rect>
+                <x>160</x>
+                <y>60</y>
+                <width>111</width>
+                <height>22</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>黑体</family>
+                <pointsize>11</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color:rgb(56, 56, 56);</string>
+              </property>
+              <item>
+               <property name="text">
+                <string>triang</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>hamming</string>
+               </property>
+              </item>
+             </widget>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QGraphicsView" name="graphicsView_11"/>
+           </item>
+           <item row="2" column="2">
+            <widget class="QGroupBox" name="groupBox">
+             <property name="styleSheet">
+              <string notr="true">color:rgb(56, 56, 56);</string>
+             </property>
+             <property name="title">
+              <string>out</string>
+             </property>
+             <widget class="QTextBrowser" name="textBrowser_3">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>30</y>
+                <width>311</width>
+                <height>201</height>
+               </rect>
+              </property>
+             </widget>
+            </widget>
+           </item>
+           <item row="1" column="2">
+            <widget class="QGraphicsView" name="graphicsView_12"/>
+           </item>
+           <item row="0" column="1">
+            <widget class="QGraphicsView" name="graphicsView_9"/>
+           </item>
+           <item row="0" column="0" rowspan="2">
+            <widget class="QGroupBox" name="groupBox_6">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <family>黑体</family>
+               <pointsize>11</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color:rgb(56, 56, 56);</string>
+             </property>
+             <property name="title">
+              <string>FIR</string>
+             </property>
+             <widget class="QLabel" name="label_28">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>160</y>
+                <width>161</width>
+                <height>20</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>黑体</family>
+                <pointsize>11</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>Length of the filter(N)</string>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_29">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>80</y>
+                <width>231</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>黑体</family>
+                <pointsize>11</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>Cutoff frequency(HPF&amp;LPF)f2</string>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_30">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>120</y>
+                <width>191</width>
+                <height>20</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>黑体</family>
+                <pointsize>11</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>Minimum Attenuation(As)</string>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_31">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>40</y>
+                <width>201</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>黑体</family>
+                <pointsize>11</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>Key frequency(BPF&amp;BSF)fl</string>
+              </property>
+             </widget>
+             <widget class="QLineEdit" name="lineEdit_10">
+              <property name="geometry">
+               <rect>
+                <x>230</x>
+                <y>40</y>
+                <width>71</width>
+                <height>20</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>黑体</family>
+                <pointsize>11</pointsize>
+               </font>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_32">
+              <property name="geometry">
+               <rect>
+                <x>310</x>
+                <y>40</y>
+                <width>21</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>黑体</family>
+                <pointsize>11</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>Hz</string>
+              </property>
+             </widget>
+             <widget class="QLineEdit" name="lineEdit_11">
+              <property name="geometry">
+               <rect>
+                <x>230</x>
+                <y>80</y>
+                <width>71</width>
+                <height>20</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>黑体</family>
+                <pointsize>11</pointsize>
+               </font>
+              </property>
+             </widget>
+             <widget class="QLineEdit" name="lineEdit_12">
+              <property name="geometry">
+               <rect>
+                <x>230</x>
+                <y>120</y>
+                <width>71</width>
+                <height>20</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>黑体</family>
+                <pointsize>11</pointsize>
+               </font>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_33">
+              <property name="geometry">
+               <rect>
+                <x>310</x>
+                <y>120</y>
+                <width>21</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>黑体</family>
+                <pointsize>11</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>dB</string>
+              </property>
+             </widget>
+             <widget class="QLineEdit" name="lineEdit_13">
+              <property name="geometry">
+               <rect>
+                <x>230</x>
+                <y>160</y>
+                <width>71</width>
+                <height>20</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>黑体</family>
+                <pointsize>11</pointsize>
+               </font>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_34">
+              <property name="geometry">
+               <rect>
+                <x>310</x>
+                <y>80</y>
+                <width>21</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>黑体</family>
+                <pointsize>11</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>Hz</string>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_35">
+              <property name="geometry">
+               <rect>
+                <x>310</x>
+                <y>160</y>
+                <width>21</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>黑体</family>
+                <pointsize>11</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>N</string>
+              </property>
+             </widget>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
