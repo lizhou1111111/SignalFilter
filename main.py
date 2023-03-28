@@ -16,6 +16,5 @@ if __name__ == '__main__':
     app = QApplication(sys.argv)
     mySignal = MySignal()
     mySignal.show()
-
-
+    sys.exit(app.exec_())
 

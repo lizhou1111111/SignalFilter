@@ -72,7 +72,6 @@ class MySignal(QMainWindow, signal.Ui_MainWindow):
         self.saveDatepath_IIR = os.getcwd().replace('\\','/')+"/ProcessedSignal/sweep.wav"##处理过后的数据保存位置
         self.saveDatepath_FIR = os.getcwd().replace('\\','/')+"/ProcessedSignal/sweepfir.wav"  ##处理过后的数据保存位置
 
-        print(self.saveDatepath_IIR)
         #self.saveDatepath_IIR = os.getcwd()+"/ProcessedSignal/sweep.wav"##处理过后的数据保存位置
         #self.saveDatepath_FIR = os.getcwd()+"/sweepfir.wav"  ##处理过后的数据保存位置
         #print(self.saveDatepath_IIR)
